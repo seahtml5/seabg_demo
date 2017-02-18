@@ -3,16 +3,40 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>{{ page.title }}</title>
-		<link rel="stylesheet" type="text/css" href="/seabg_demo/js/1.css"/>
-		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/js/2.css"/>
+		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/seamain.css"/>
 	</head>
-	<body>
-		<h1>{{ site.zuozhe }}</h1>
-		{{ content }}
-	</body>
-	<script type="text/javascript" src="{{site.baseurl}}/js/1.js"></script>
-	<script type="text/javascript" src="../js/1.js"></script>
-	<script type="text/javascript" src="/seabg_demo/js/1.js"></script>
-	
-	
+<body>
+	<div class="sea">
+		<div id="head">
+			<div id="nav">
+				<ul>
+					<li onclick="tab('content')">主页</li>
+					<li onclick="tab('content2')">关于作者</li>
+					<li onclick="tab('content3')">关于前端</li>
+					<li onclick="tab('content4')">关于情感</li>
+					<li onclick="tab('content5')">关于碎片</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			{{ content }}
+		</div>
+		<div id="content2">
+			<div class="picture">
+				<!--<img src="{{site.baseurl}}/imgs/2017218.jpg"/>-->
+			</div>
+			<h3>毕业于网络专业，对htnl5颇感兴趣，目前正在一家html5公司培训</h3>
+		</div>
+		<div id="content3">
+			<h3>专业于html5前端开发<br />·熟练htmlcss,新增html5功能<br />·会Bootstrap,sass框架<br />·熟练jiavascript</h3>
+		</div>
+		<div id="content4">
+			<h3>前途一片迷茫，希望闯出自己的一片天</h3>
+		</div>
+		<div id="content5">
+			<h3>暂时没有碎片</h3>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="{{site.baseurl}}/js/1.js" ></script>
 </html>
