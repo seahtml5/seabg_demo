@@ -1,0 +1,100 @@
+---
+layout: blank
+---
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.boxes{
+				width: 100px;
+				height: 300px;
+				margin: 100px auto;
+				position: relative;
+				/*background-color: rgba(50,50,50,0.2);*/
+				transform-style: preserve-3d;
+				perspective: 2000px;
+				transition: transform 100s;
+			}
+			.boxes div{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all 5s;
+				transform: rotateX(90deg);
+				background-color: rgba(255,0,0,0.5);
+			}
+			.boxes:hover .side1{
+				background-color: rgba(255,0,0,0.5);
+				transform: rotateX(90deg) rotateY(0deg) translateZ(200px);
+			}
+			.boxes:hover .side2{
+				background-color: rgba(255,255,0,0.5);
+				transform: rotateX(90deg) rotateY(30deg) translateZ(200px);
+			}
+			.boxes:hover .side3{
+				background-color: rgba(0,255,255,0.5);
+				transform: rotateX(90deg) rotateY(60deg) translateZ(200px);
+			}
+			.boxes:hover .side4{
+				background-color: rgba(0,255,0,0.5);
+				transform: rotateX(90deg) rotateY(90deg) translateZ(200px);
+			}
+			.boxes:hover .side5{
+				background-color: rgba(0,0,255,0.5);
+				transform: rotateX(90deg) rotateY(120deg) translateZ(200px);
+			}
+			.boxes:hover .side6{
+				background-color: rgba(0,0,75,0.5);
+				transform: rotateX(90deg) rotateY(150deg) translateZ(200px);
+			}
+			.boxes:hover .side7{
+				background-color: rgba(255,0,75,0.5);
+				transform: rotateX(90deg) rotateY(180deg) translateZ(200px);
+			}
+			.boxes:hover .side8{
+				background-color: rgba(255,255,75,0.5);
+				transform: rotateX(90deg) rotateY(210deg) translateZ(200px);
+			}
+			.boxes:hover .side9{
+				background-color: rgba(75,255,255,0.5);
+				transform: rotateX(90deg) rotateY(240deg) translateZ(200px);
+			}
+			.boxes:hover .side10{
+				background-color: rgba(75,255,0,0.5);
+				transform: rotateX(90deg) rotateY(270deg) translateZ(200px);
+			}
+			.boxes:hover .side11{
+				background-color: rgba(75,0,255,0.5);
+				transform: rotateX(90deg) rotateY(300deg) translateZ(200px);
+			}
+			.boxes:hover .side12{
+				background-color: rgba(75,0,75,0.5);
+				transform: rotateX(90deg) rotateY(330deg) translateZ(200px);
+			}
+			.boxes:hover{
+				transform: rotate(7200deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="boxes">
+			<div class="side1">01</div>
+			<div class="side2">02</div>
+			<div class="side3">03</div>
+			<div class="side4">04</div>
+			<div class="side5">05</div>
+			<div class="side6">06</div>
+			<div class="side7">07</div>
+			<div class="side8">08</div>
+			<div class="side9">09</div>
+			<div class="side10">10</div>
+			<div class="side11">11</div>
+			<div class="side12">12</div>
+		</div>
+	</body>
+</html>
